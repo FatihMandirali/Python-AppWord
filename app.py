@@ -9,10 +9,10 @@ def getJsonList():
     try:
         wordList = wordToJson.createJsonFile()
         httpRequest.httpRequestForJsonWord(wordList)
-        print("response success")
+        print("response success.")
         return jsonify({"msg": "Başarılı"})
     except:
-        print("response fail")
+        print("response fail.")
         return jsonify({"msg": "Hata"})
 
 if __name__ == "__main__":
